@@ -26,7 +26,13 @@ public class question01StepDefs {
         Assert.assertEquals(map.get("fullname"), fullname);
         Assert.assertEquals(map.get("city"), city);
         Assert.assertEquals(map.get("country"), country);
-        Assert.assertEquals(map.get("sum")+" ", amount);
+        Assert.assertEquals(map.get("sum")+"", amount);
+        //System.out.println(count);
+
+
+
+
+
 
     }
 }

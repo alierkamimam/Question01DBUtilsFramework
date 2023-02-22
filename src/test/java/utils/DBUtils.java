@@ -41,7 +41,7 @@ public class DBUtils {
             while (resultSet.next()) {
                 Map<String, Object> colNameValueMap = new HashMap<String, Object>();
 
-                for (int i = 1; i < rsmd.getColumnCount(); i++) {
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
                     colNameValueMap.put(rsmd.getColumnName(i), resultSet.getObject(i));
                 }
                 rowList.add(colNameValueMap);
